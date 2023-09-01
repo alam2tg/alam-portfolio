@@ -8,6 +8,15 @@
 	// Resume Section: Downloadable link to resume
 
 // Footer include linkedin, github, 3rd platform
+const navStyle = {
+	content: {
+		padding: 20,
+	},
+	navFont: {
+		fontSize: '2rem',
+	}
+}
+
 
 export default function Nav() {
 	return (
@@ -16,21 +25,23 @@ export default function Nav() {
 				style={{
 					display: 'flex',
 					flexDirection: 'row',
-					alignItems: 'flex-start',
-					justifyContent: 'flex-start',
+					alignItems: 'flex-end',
+					justifyContent: 'flex-end',
 			}}
 			>
-				<div>
-					<a href="#">About Me</a>
+				<div style={navStyle.content}>
+					<a href="#" style={navStyle.navFont}>About Me</a>
 				</div>
-				<div>
-					<a href="#">Portfolio</a>
+				<div  style={navStyle.content}>
+					<a href="#"style={navStyle.navFont}>Portfolio
+</a>
 				</div>
-				<div>
-					<a href="#">Contact</a>
+				<div style={navStyle.content}>
+					<a href="#" style={navStyle.navFont}>Contact
+</a>
 				</div>
-				<div>
-					<a href="#">Resume</a>
+				<div style={navStyle.content}>
+					<a href="#" style={navStyle.navFont}>Resume</a>
 				</div>
 
 			</section>
