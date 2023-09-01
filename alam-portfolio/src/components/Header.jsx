@@ -4,7 +4,7 @@ import '../styles/Header.css'
 
 const styles = {
 	headerStyle: {
-		background: '#5d72e9',
+		background:'e8eaf6'
 	},
 	headingStyle: {
 		fontSize: '64px',
