@@ -8,3 +8,33 @@
 	// Resume Section: Downloadable link to resume
 
 // Footer include linkedin, github, 3rd platform
+
+export default function Nav() {
+	return (
+		<nav className="navigation">
+			<section 
+				style={{
+					display: 'flex',
+					flexDirection: 'row',
+					alignItems: 'flex-start',
+					justifyContent: 'flex-start',
+			}}
+			>
+				<div>
+					<a href="#">About Me</a>
+				</div>
+				<div>
+					<a href="#">Portfolio</a>
+				</div>
+				<div>
+					<a href="#">Contact</a>
+				</div>
+				<div>
+					<a href="#">Resume</a>
+				</div>
+
+			</section>
+		</nav>
+	)
+}
+
