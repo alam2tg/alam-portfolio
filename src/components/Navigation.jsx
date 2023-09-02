@@ -40,7 +40,6 @@ export default function Nav() {
 				<div style={navStyle.content}>
 					<Link to="/" className={currentPage === '/' ? 'nav-link active' : 'nav-link'} style={navStyle.navFont}>About Me</Link>
 				</div>
-				
 				<div  style={navStyle.content}>
 					<Link to="/Portfolio" className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'} style={navStyle.navFont}>Portfolio</Link>
 				</div>
