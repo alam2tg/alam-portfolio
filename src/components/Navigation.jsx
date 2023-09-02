@@ -8,6 +8,9 @@
 	// Resume Section: Downloadable link to resume
 
 // Footer include linkedin, github, 3rd platform
+
+import { Link, useLocation } from 'react-router-dom';
+
 const navStyle = {
 	content: {
 		padding: 20,
@@ -18,7 +21,11 @@ const navStyle = {
 }
 
 
+
 export default function Nav() {
+
+	const currentPage = useLocation().pathname;
+
 	return (
 		<nav className="navigation">
 			<section 
@@ -28,23 +35,20 @@ export default function Nav() {
 					alignItems: 'flex-end',
 					justifyContent: 'flex-end',
 					background: '#e8eaf6',
-					
-
 			}}
 			>
 				<div style={navStyle.content}>
-					<a href="/" style={navStyle.navFont}>About Me</a>
+					<Link to="/" className={currentPage === '/' ? 'nav-link active' : 'nav-link'} style={navStyle.navFont}>About Me</Link>
 				</div>
+				
 				<div  style={navStyle.content}>
-					<a href="/portfolio"style={navStyle.navFont}>Portfolio
-</a>
+					<Link to="/Portfolio" className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'} style={navStyle.navFont}>Portfolio</Link>
 				</div>
 				<div style={navStyle.content}>
-					<a href="/contact" style={navStyle.navFont}>Contact
-</a>
+					<Link to="/Contact" className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'} style={navStyle.navFont}>Contact</Link>
 				</div>
 				<div style={navStyle.content}>
-					<a href="/resume" style={navStyle.navFont}>Resume</a>
+					<Link to="/Resume" className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'} style={navStyle.navFont}>Resume</Link>
 				</div>
 
 			</section>

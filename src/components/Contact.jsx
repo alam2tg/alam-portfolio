@@ -1,4 +1,5 @@
-import { useSate } from 'react';
+import { useState } from 'react';
+import '..styles/Contact.css'
 
 function Form() {
 	const [name, setName] = useState('');
@@ -19,6 +20,13 @@ function Form() {
 			setMessage(inputValue);
 		}
 	};
+
+	const handleFormSubmit = e => {
+		e.preventDefault();
+		if(name === '' || email === '' || message === '') {
+			alert('Please fill in all fields');
+		}
+	}
 
 	return (
 		<div className="container text-center">
@@ -58,3 +66,5 @@ function Form() {
 		</div>
 	)
 }
+
+export default Form;
