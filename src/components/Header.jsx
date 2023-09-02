@@ -8,13 +8,14 @@ const styles = {
 	},
 	headingStyle: {
 		fontSize: '64px',
+		alignContent: 'start',
 	}
 };
 
 function Header() {
 	return(
 		<header style={styles.headerStyle} className='header'>
-			<h1 style={styles.headingStyle}>Aaron's Portfolio</h1>
+			<h1 style={styles.headingStyle}>Aaron's Developer Portfolio</h1>
 		</header>
 	);
 }

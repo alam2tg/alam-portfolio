@@ -27,6 +27,9 @@ export default function Nav() {
 					flexDirection: 'row',
 					alignItems: 'flex-end',
 					justifyContent: 'flex-end',
+					background: '#e8eaf6',
+					
+
 			}}
 			>
 				<div style={navStyle.content}>

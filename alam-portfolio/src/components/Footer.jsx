@@ -1,1 +1,0 @@
-// Footer component used on multiple pages
