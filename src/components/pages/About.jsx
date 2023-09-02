@@ -9,7 +9,7 @@ const styles = {
 	},
 };
 
-export default function AboutMe() {
+export default function About() {
 	return (
 		<div style={styles.card}>
 			<h1 style={styles.content}>About Me</h1>

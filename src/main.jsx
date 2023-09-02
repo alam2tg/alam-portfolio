@@ -1,9 +1,9 @@
 // import ReactD from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import About from './components/About.jsx';
-import Contact from './components/Contact.jsx';
-import Resume from './components/Resume.jsx';
+import About from './components/pages/About.jsx';
+import Contact from './components/pages/Contact.jsx';
+// import Resume from './components/Resume.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
