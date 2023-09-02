@@ -33,18 +33,18 @@ export default function Nav() {
 			}}
 			>
 				<div style={navStyle.content}>
-					<a href="#" style={navStyle.navFont}>About Me</a>
+					<a href="/" style={navStyle.navFont}>About Me</a>
 				</div>
 				<div  style={navStyle.content}>
-					<a href="#"style={navStyle.navFont}>Portfolio
+					<a href="/portfolio"style={navStyle.navFont}>Portfolio
 </a>
 				</div>
 				<div style={navStyle.content}>
-					<a href="#" style={navStyle.navFont}>Contact
+					<a href="/contact" style={navStyle.navFont}>Contact
 </a>
 				</div>
 				<div style={navStyle.content}>
-					<a href="#" style={navStyle.navFont}>Resume</a>
+					<a href="/resume" style={navStyle.navFont}>Resume</a>
 				</div>
 
 			</section>
