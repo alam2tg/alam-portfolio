@@ -6,15 +6,8 @@
  }
  
  .header h1 {
-	margin: 0;
+	margin: 25px;
 	padding-top: 75px;
-	text-align: center;
 	color: aliceblue;
 	font-size: 3rem;
- }
- 
- test {
-	background: '#e8eaf6';
-	background: '#3f51b5'
-	
  }

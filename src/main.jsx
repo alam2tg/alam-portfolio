@@ -6,6 +6,7 @@ import Portfolio from './components/pages/Portfolio.jsx';
 import Contact from './components/pages/Contact.jsx';
 import Error from './components/pages/Error.jsx';
 // import Resume from './components/Resume.jsx';
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
