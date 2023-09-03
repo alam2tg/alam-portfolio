@@ -2,7 +2,9 @@
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import About from './components/pages/About.jsx';
+import Portfolio from './components/pages/Portfolio.jsx';
 import Contact from './components/pages/Contact.jsx';
+import Error from './components/pages/Error.jsx';
 // import Resume from './components/Resume.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -10,7 +12,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
-        // errorElement: <Error />,
+        errorElement: <Error />,
         children: [
 
             {
@@ -19,10 +21,10 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <About />,
             },
-            // {
-            //     path: '/Portfolio',
-            //     element: <Portfolio />,
-            // },
+            {
+                path: '/Portfolio',
+                element: <Portfolio />,
+            },
             {
                 path: '/Contact',
                 element: <Contact />,
