@@ -18,12 +18,13 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
+                path: 'Portfolio',
                 element: <Portfolio />
             },
             {
                 // https://reactrouter.com/en/main/route/route#path
                 // The path pattern to match against the URL to determine if this route matches a URL, link href, or form action.
-                path: '/About',
+                path: '/',
                 element: <About />,
             },
             {

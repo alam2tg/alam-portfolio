@@ -2,7 +2,7 @@
 // export default function
 import Projects from "../components/Projects";
 
-const projectData = [
+const project = [
 	{
 		id: 1,
 		title: "EnDEVors",
@@ -71,7 +71,7 @@ export default function Project() {
 			</div>
 			<div>
 				<ul className="project-list">
-					return< Projects projectData={projectData}/>
+					return< Projects project={project}/>
 				</ul>
 			</div>
 		</div>
