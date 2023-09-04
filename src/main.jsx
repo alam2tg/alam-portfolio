@@ -1,6 +1,7 @@
-// import ReactD from 'react'
+
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+//pages
 import About from './pages/About.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import Contact from './pages/Contact.jsx';
@@ -15,16 +16,15 @@ const router = createBrowserRouter([
         element: <App />,
         errorElement: <Error />,
         children: [
-
+            {
+                index: true,
+                element: <Portfolio />
+            },
             {
                 // https://reactrouter.com/en/main/route/route#path
                 // The path pattern to match against the URL to determine if this route matches a URL, link href, or form action.
-                path: '/',
+                path: '/About',
                 element: <About />,
-            },
-            {
-                path: '/Portfolio',
-                element: <Portfolio />,
             },
             {
                 path: '/Contact',

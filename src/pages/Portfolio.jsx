@@ -1,51 +1,57 @@
 // add 6 active repos to portfolio
 // export default function
-import Projects from '../components/Projects';
+import Projects from "../components/Projects";
 
 const projectData = [
 	{
 		id: 1,
-		title: '',
-		website: '',
-		github: '',
+		title: "EnDEVors",
+		description: "",
+		website: "https://endevor-3d604fa0490c.herokuapp.com/",
+		github: "https://github.com/ssherp/EnDEVor",
 	},
 	{
 		id: 2,
-		title: '',
-		website: '',
-		github: '',
+		title: "Specialized Fuel Locator",
+		description: "This application searches for nearby gas stations by Zip Code and fuel type to return a list of nearby gas stations with their address",
+		website: "https://iquiroz95.github.io/diesel-din-dance/",
+		github: "https://github.com/iquiroz95/diesel-din-dance",
 	},
 	{
 		id: 3,
-		title: '',
-		website: '',
-		github: '',
+		title: "Project 3 Calendar",
+		description: "This application allows a team to create a shared calendar for a group/team to create events, view schedules, and schedule meetings more effectively by avoiding scheduling conflicts",
+		website: "",
+		github: "https://github.com/alam2tg/Calendar-Schedule-Sync",
 	},
 	{
 		id: 4,
-		title: '',
-		website: '',
-		github: '',
+		title: "Social Network API",
+		description: "There is no deployed site for this project. This project was intended to test relational database concepts with MongoDB.",
+		website: "https://github.com/alam2tg/social-network-api",
+		github: "https://github.com/alam2tg/social-network-api",
 	},
 	{
 		id: 5,
-		title: '',
-		website: '',
-		github: '',
+		title: "Reverse Skull Key",
+		description: "This application is a simple password generator that uses window prompts to accept",
+		website: "https://alam2tg.github.io/reverse-skull-key/",
+		github: "https://github.com/alam2tg/reverse-skull-key",
 	},
 	{
 		id: 6,
-		title: '',
-		website: '',
-		github: '',
+		title: "Aaron's Time Capsule",
+		description: "My first personal website using HTML, CSS, and Flexbox",
+		website: "https://alam2tg.github.io/alamtimecapsule/",
+		github: "https://github.com/alam2tg/alamtimecapsule",
 	},
 ]
 
 const styles = {
 	card: {
 		margin: 20,
-		background: 'e8eaf6',
-		fontSize:'1.4rem'
+		background: "e8eaf6",
+		fontSize:"1.4rem"
 	},
 	content: {
 		padding: 20,
