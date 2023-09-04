@@ -1,10 +1,10 @@
 // import ReactD from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import About from './components/pages/About.jsx';
-import Portfolio from './components/pages/Portfolio.jsx';
-import Contact from './components/pages/Contact.jsx';
-import Error from './components/pages/Error.jsx';
+import About from './pages/About.jsx';
+import Portfolio from './pages/Portfolio.jsx';
+import Contact from './pages/Contact.jsx';
+import Error from './pages/Error.jsx';
 // import Resume from './components/Resume.jsx';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
