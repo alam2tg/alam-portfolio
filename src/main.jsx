@@ -6,7 +6,7 @@ import About from './pages/About.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import Contact from './pages/Contact.jsx';
 import Error from './pages/Error.jsx';
-// import Resume from './components/Resume.jsx';
+import Resume from './components/Resume.jsx';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -31,10 +31,11 @@ const router = createBrowserRouter([
                 path: '/Contact',
                 element: <Contact />,
             },
-            // {
-            //     path: '/Resume',
-            //     element: <Resume />,
-            // }
+            {
+                path: '/Resume',
+                element: <Resume />,
+                loader: 
+            }
         ]
     }
 ])

@@ -5,6 +5,7 @@ export default function Resume() {
 	return (
 		<div>
 			<h1>Resume</h1>
-			<link ><a></a></link>
+			<a href="../Resume/Resume.pdf"></a>
 		</div>
-	)}
+	)
+}
