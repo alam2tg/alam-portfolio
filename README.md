@@ -29,17 +29,14 @@
 
 ## Features
 
-- **User Profiles:** To ensure the application's security, users are prompted to create an account. Once logged in, users can exclusively manage their own information, fostering a secure and personalized experience.
 
-- **Service Management:** Seamlessly add, edit, or remove the services you provide. Each service entry includes essential details such as name, description, and price, ensuring accurate and consistent quoting.
-
-- **Effortless Quote Creation:** The application streamlines the quote generation process. Create detailed quotes for your clients by selecting the relevant services from your catalog, eliminating the need to manually input each line item repeatedly.
-
-- **Quote Overview:** Gain instant access to a dedicated page displaying all your generated quotes. Effortlessly view the details of each quote, track their status, and stay on top of your client interactions.
-
-- **Flexible Quote Management:** Edit, delete, or re-download your quotes as needed. Maintain full control over your quote history and make adjustments whenever your clients' needs evolve.
 
 <br>
+
+## Credits
+Lainey Creighton 
+[Lainey's Github](github.com/laineycreighton)
+Thank you Lainey for teaching me advanced CSS to use with React!
 
 ## Technology Used   
 
@@ -93,9 +90,7 @@
 
 ## Deployment
 
-Website URL: [enDEVors](https://endevor-3d604fa0490c.herokuapp.com/)
-
-![alt text](./public/assets/endevors-home.png)
+Website URL: [alam-portfolio](https://https://alam2tg-react-portfolio.netlify.app/)
 
 <br>
 

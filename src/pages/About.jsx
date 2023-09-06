@@ -1,3 +1,4 @@
+import myphoto from '../assets/images/me-and-my-dog-2.jpg'
 
 const styles = {
 	card: {
@@ -33,8 +34,9 @@ export default function About() {
 			<div style={styles.content} id="photo">
 				<img style={{
 					width:'100%',
-					height:'100%'
-				}} src="../src/assets/images/me-and-my-dog-2.jpg" />
+					height:'100%',
+					borderRadius: '20px',
+				}} src={myphoto} />
 			</div>
 		</div>
 	)	
