@@ -11,7 +11,9 @@ export default function App() {
     <>
         <Header />
         <Nav />
-        <Outlet />
+        <main>
+          <Outlet />
+        </main>
         <Footer />
     </>
   )

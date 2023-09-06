@@ -3,8 +3,27 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: start;
-  
+  --dark: #272822;
+  --light: #F8F8F3;
+  --blue: #0D859A;
+  --lightOrange: #F08C01;
+  --orange: #E8580C;
+  --red: #E23230;
+  --main: 'Press Start 2P', cursive;
+  --other: 'Source Code Pro', monospace;
 }
+
+main {
+  margin: 0;
+  padding: 0;
+  background: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+  
 
 .card {
   padding: 20px;

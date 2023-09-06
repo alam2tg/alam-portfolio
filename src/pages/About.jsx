@@ -1,3 +1,4 @@
+
 const styles = {
 	card: {
 		margin: 20,
@@ -33,7 +34,7 @@ export default function About() {
 				<img style={{
 					width:'100%',
 					height:'100%'
-				}} src="./assets/images/me-and-my-dog-2.jpg" />
+				}} src="../src/assets/images/me-and-my-dog-2.jpg" />
 			</div>
 		</div>
 	)	

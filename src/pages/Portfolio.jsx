@@ -1,9 +1,9 @@
 // add 6 active repos to portfolio
 // export default function
 import Projects from "../components/Projects";
-import dddLogo from "../images/dddLogo.jpg"
-import enDEVors from "../images/enDEVors.png"
-import placeholder from "../images/placeholder.png"
+import dddLogo from "../assets/images/dddLogo.jpg"
+import enDEVors from "../assets/images/enDEVors.png"
+import placeholder from "../assets/images/placeholder.png"
 
 
 const project = [
@@ -81,12 +81,14 @@ export default function Project() {
 			</div>
 			<div className="ProjectsCard">
 				<div className='img-container'>
-                    <div className="project-image">
-                        <img src={currentProject.image} alt={currentProject.title} />
-                    </div>
+						<div className="project-image">
+							<img src={Project.image} alt={Project.title} />
+						</div>
+				</div>
 				<ul className="project-list">
 					< Projects project={project}/>
 				</ul>
+
 			</div>
 		</div>
 	);
