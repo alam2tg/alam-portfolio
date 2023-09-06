@@ -1,13 +1,15 @@
-:root {
-	--background: ;
+footer {
+	/* outline: red dashed 3px; */
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 }
 
 .icons {
-	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	width: 50%;
 	margin-bottom: 0;
 }
 

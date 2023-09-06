@@ -4,6 +4,7 @@ import { useState } from 'react'
 import dieselDinDance from "../assets/images/diesel-din-dance.jpg"
 import enDEVors from "../assets/images/enDEVors.png"
 import placeholder from "../assets/images/placeholder.png"
+import socialNetwork from "../assets/images/gif-social-network.gif"
 
 export default function Portfolio() {
 	const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,7 +49,7 @@ export default function Portfolio() {
 			id: 4,
 			title: "Social Network API",
 			description: "There is no deployed site for this project. This project was intended to test relational database concepts with MongoDB.",
-			image: placeholder,
+			image: socialNetwork,
 			website: "https://github.com/alam2tg/social-network-api",
 			github: "https://github.com/alam2tg/social-network-api",
 		},
@@ -93,29 +94,30 @@ export default function Portfolio() {
 					Here is a collection of some of the projects I have worked on in my time as a developer. The goal of these projects was to apply the new skills I have learned while coding. Please feel free to reach out in the Contact section if you have any questions!
 				</p>
 			</div>
+			<h3 className="project-title">{currentProject.title}</h3>
 			<div className="carousel-buttons">
             <button onClick={prevSlide}> ← </button>
             <button onClick={nextSlide}> → </button>
          </div>
 			
 			<div className="project-card">
-				<h3 className="project-title">{currentProject.title}</h3>
+
 				<div className="img-container">
 					<div className="project-image">
 						<img src={currentProject.image} alt={currentProject.title} 
 						style={{
 							width:'50%',
-							height:'50%',
+							maxHeight: '50vh',
 							justifyContent: 'center'
 						}}/>
 					</div>
 				</div>
-				<div className="links">
+				<div className="links" id="links-container">
 					<button>
-						<a href={currentProject.github}>Github</a>
+						<a href={currentProject.github}><strong>Github Repo</strong></a>
 					</button>
 					<button>
-						<a href={currentProject.website}>Website</a>
+						<a href={currentProject.website}><strong>Website</strong></a>
 					</button>
 				</div>
 			</div>
