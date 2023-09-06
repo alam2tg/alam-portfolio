@@ -1,11 +1,45 @@
-.form {
-	margin: 20px;
+.contact-container {
+	outline: red dashed 3px;
+	display: flex;
+	flex-direction: column;
+	height: 60vh;
+	width: 100%;
+	justify-content: bottom center;
+	align-items: center ;
+
+	margin: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h1 {
+	justify-content: center center;
+	align-content: center;
+}
+
+
+.contact-form {
+	width: 50%;
+	height: 50vh; 
+	margin: 25px;
+	outline: red dashed 3px;
+	text-align: center;
+	justify-content: center center;
  }
  
- .form input {
+input {
+	outline: red dashed 3px;
 	display: block;
-	margin-top: 5px;
-	margin-bottom: 5px;
 	width: 100%;
+	text-align:center;
+	margin-top: 30px;
+	font-size: 20px;
  }
+
+ button {
+	justify-content: center center;
+	
+ }
+
+ 
  

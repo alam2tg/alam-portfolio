@@ -9,8 +9,8 @@
   --lightOrange: #F08C01;
   --orange: #E8580C;
   --red: #E23230;
-  --main: 'Press Start 2P', cursive;
-  --other: 'Source Code Pro', monospace;
+  --cyan:##26E8DF;
+  --green:##04aa6dff;
 }
 
 main {
@@ -27,4 +27,41 @@ main {
 
 .card {
   padding: 20px;
+}
+.carousel-buttons {
+  /* outline: var(--red) dashed 3px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  outline: var(--red) dashed 3px;
+  height: 40px;
+  width: 15%;
+  background-color: var(--light);
+  margin: 20px;
+}
+
+.project-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center top;
+  align-items: center;
+  font-size:24px;
+  color: var()
+}
+
+.project-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center top;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center top;
+  align-items: center;
 }

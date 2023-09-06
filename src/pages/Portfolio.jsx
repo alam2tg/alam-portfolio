@@ -1,6 +1,7 @@
 // add 6 active repos to portfolio
 // export default function
-import dddLogo from "../assets/images/dddLogo.jpg"
+import { useState } from 'react'
+import dieselDinDance from "../assets/images/diesel-din-dance.jpg"
 import enDEVors from "../assets/images/enDEVors.png"
 import placeholder from "../assets/images/placeholder.png"
 
@@ -31,7 +32,7 @@ export default function Portfolio() {
 			id: 2,
 			title: "Specialized Fuel Locator",
 			description: "This application searches for nearby gas stations by Zip Code and fuel type to return a list of nearby gas stations with their address",
-			image: dddLogo,
+			image: dieselDinDance,
 			website: "https://iquiroz95.github.io/diesel-din-dance/",
 			github: "https://github.com/iquiroz95/diesel-din-dance",
 		},
@@ -71,19 +72,19 @@ export default function Portfolio() {
 
 
 	const nextSlide = () => {
-		setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
+		setCurrentIndex((prevIndex) => (prevIndex + 1) % project.length);
   };
 
   const prevSlide = () => {
 		setCurrentIndex((prevIndex) =>
-			 prevIndex === 0 ? projects.length - 1 : prevIndex - 1
+			prevIndex === 0 ? project.length - 1 : prevIndex - 1
 		);
   };
 
   const currentProject = project[currentIndex];
 
 	return (
-		<div className="ProjectsContainer">
+		<div className="projects-container carousel">
 			<div style={styles.content}>
 				<h1 >
 					My Projects
@@ -92,17 +93,31 @@ export default function Portfolio() {
 					Here is a collection of some of the projects I have worked on in my time as a developer. The goal of these projects was to apply the new skills I have learned while coding. Please feel free to reach out in the Contact section if you have any questions!
 				</p>
 			</div>
-			<div className="ProjectsCard">
-				<div className='img-container'>
-						<div className="project-image">
-							<img src={project.image} alt={project.title} />
-
-						</div>
+			<div className="carousel-buttons">
+            <button onClick={prevSlide}> ← </button>
+            <button onClick={nextSlide}> → </button>
+         </div>
+			
+			<div className="project-card">
+				<h3 className="project-title">{currentProject.title}</h3>
+				<div className="img-container">
+					<div className="project-image">
+						<img src={currentProject.image} alt={currentProject.title} 
+						style={{
+							width:'50%',
+							height:'50%',
+							justifyContent: 'center'
+						}}/>
+					</div>
 				</div>
-				<ul className="project-list">
-					
-				</ul>
-
+				<div className="links">
+					<button>
+						<a href={currentProject.github}>Github</a>
+					</button>
+					<button>
+						<a href={currentProject.website}>Website</a>
+					</button>
+				</div>
 			</div>
 		</div>
 	);

@@ -29,40 +29,45 @@ function Contact() {
 	}
 
 	return (
-		<div className="container text-center">
-			<h1>
-				Contact Form
-			</h1>
-			<form className="form" onSubmit={handleFormSubmit}>
-				<input
-					value={name}
-					name="name"
-					onChange={handleInputChange}
-					// onChange={orThisWayForBoth}
-					type="text"
-					placeholder="Name"
-				/>
-				<input
-					value={email}
-					name="lastName"
-					onChange={handleInputChange}
-					// onChange={orThisWayForBoth}
-					type="text"
-					placeholder="Email"
-				/>
-				<input
-					value={message}
-					name="message"
-					onChange={handleInputChange}
-					// onChange={orThisWayForBoth}
-					type="text"
-					placeholder="Type your message here"
-				/>
+		<div className="contact-container">
+			<div className="contact-form">
+				<h1>
+					Contact Form
+				</h1>
+				<form className="form" onSubmit={handleFormSubmit}>
+					<input
+						value={name}
+						name="name"
+						onChange={handleInputChange}
+						// onChange={orThisWayForBoth}
+						type="text"
+						placeholder="Name"
+					/>
+					<input
+						value={email}
+						name="lastName"
+						onChange={handleInputChange}
+						// onChange={orThisWayForBoth}
+						type="text"
+						placeholder="Email"
+					/>
+					<input
+						value={message}
+						name="message"
+						onChange={handleInputChange}
+						// onChange={orThisWayForBoth}
+						type="text"
+						placeholder="Type your message here"
+					/>
 
-				<button type="submit">
-					Submit
-				</button>
-			</form>
+					<button type="submit" style={{
+								width:'50%',
+								height:'50%',
+								justifyContent: 'center'}}>
+						Submit
+					</button>
+				</form>
+			</div>
 		</div>
 	)
 }
