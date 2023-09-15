@@ -42,7 +42,7 @@ export default function Portfolio() {
 			id: 3,
 			title: "Blackjack Card Counter",
 			description: "This application allows a team to create a shared calendar for a group/team to create events, view schedules, and schedule meetings more effectively by avoiding scheduling conflicts",
-			image: placeholder,
+			image: blackjack,
 			website: "https://dashboard.heroku.com/apps/blackjack-card-counter-2023",
 			github: "https://github.com/alam2tg/Card-Counting-Blackjack",
 		},
