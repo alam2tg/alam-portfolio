@@ -5,6 +5,7 @@ import dieselDinDance from "../assets/images/diesel-din-dance.jpg"
 import enDEVors from "../assets/images/enDEVors.png"
 import placeholder from "../assets/images/placeholder.png"
 import socialNetwork from "../assets/images/gif-social-network.gif"
+import blackjack from "../assets/images/Blackjack.png"
 
 export default function Portfolio() {
 	const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,11 +40,11 @@ export default function Portfolio() {
 		},
 		{
 			id: 3,
-			title: "Project 3 Calendar",
+			title: "Blackjack Card Counter",
 			description: "This application allows a team to create a shared calendar for a group/team to create events, view schedules, and schedule meetings more effectively by avoiding scheduling conflicts",
 			image: placeholder,
-			website: "",
-			github: "https://github.com/alam2tg/Calendar-Schedule-Sync",
+			website: "https://dashboard.heroku.com/apps/blackjack-card-counter-2023",
+			github: "https://github.com/alam2tg/Card-Counting-Blackjack",
 		},
 		{
 			id: 4,

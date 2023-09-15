@@ -15,7 +15,6 @@
 
 ## Description
 
- enDEVors is a powerful and intuitive application designed specifically for freelance software developers. This tool simplifies the process of managing the services they offer, creating quotes for clients, and efficiently organizing their quote history.
 
 <br>
 
